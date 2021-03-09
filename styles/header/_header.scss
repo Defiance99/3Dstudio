@@ -1,0 +1,40 @@
+.header {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+
+    z-index: 10;
+}
+
+.header__element_left-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    color: #FFF;
+    font-size: calc(20px + 1vw);
+    font-family: var(--text-font);
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header__navigation {
+    display: flex;
+    justify-content: space-between;
+    max-width: 650px;
+    width: 100%;
+}
+
+.header__nav-item {
+    font-size: 18px;
+    color: #FFF;
+    text-decoration: none;
+    font-family: var(--text-font);
+    text-transform: uppercase;
+}
