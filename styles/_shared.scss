@@ -14,3 +14,125 @@ p {
 .text-center {
     text-align: center;
 }
+
+.text-right {
+    text-align: right;
+}
+
+h5.title {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.wh-color {
+    color: #FFF;
+}
+
+.primary-button {
+    display: block;
+    max-width: 175px;
+    background-color: var(--goden-color);
+
+    &:hover {
+        cursor: pointer;
+
+    }
+}
+
+.primary-button__text {
+    color: var(--white-color);
+    text-align: center;
+    font-weight: 700;
+    padding: 15px;
+}
+
+.primary-color {
+    color: var(--goden-color);
+}
+
+.circle-button {
+    padding: 0 40px;
+    margin: 20px auto;
+    border-radius: 50px;
+    background-color: var(--white-color);
+    cursor: pointer;
+}
+
+.circle-button__text {
+    font-family: var(--title-font);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.m-auto {
+    margin: 0 auto;
+}
+
+.ml-1 {
+    margin-left: 1rem;
+}
+
+.m-standart {
+    margin: 30px auto;
+}
+
+.button-animation__shine {
+    position: relative;
+    overflow: hidden;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1.5em;
+        height: 100%;
+        background-color: rgba(#fff, 0.6);
+        transform: translateX(-4em) skewX(-45deg);
+        animation: move-light 4.7s infinite 3s;
+        animation-delay: 2s;
+    }
+
+    .primary-button__text {
+        padding: 0;
+    }
+}
+
+
+@keyframes move-light {
+    0% {
+        transform: translateX(-4em) skewX(-45deg);
+    } 
+    60% {
+        transform: translateX(15em) skewX(-45deg);
+    }
+    100% {
+        transform: translateX(15em) skewX(-45deg);
+    }
+}
+
+.separator {
+    position: relative;
+    margin: 20px auto;
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: var(--goden-color);
+
+    &::after, &::before {
+        content: '';
+        position: absolute;
+        top: calc(50% - 0.5px);
+        width: 300px;
+        height: 1px;        
+        background-color: rgba(255,255,255,.1);
+    }
+
+    &::after {
+        right: 25px;
+    }
+
+    &::before {
+        left: 25px;
+    }
+}

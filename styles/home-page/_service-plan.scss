@@ -1,0 +1,75 @@
+.service-plan {
+    position: relative;
+    min-height: 100vh;
+    background-color: var(--darkness-color);
+    /* background: url(/imgs/plan-packs/15261scvEHnpQeZVMBigdbaA.jpg); */
+    background-attachment: fixed;
+
+    /* &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0,0,0, 0.6);
+    } */
+}
+
+.service-plan__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 650px;
+    margin: 0 auto;
+    max-width: var(--main-block-width);
+    width: 100%;
+    padding: var(--default-padding);
+    z-index: 2;
+}
+
+.service-plan__header {
+
+}
+
+.service-plan__header .title {
+    color: #FFF;
+    font-size: calc(20px + 1vw);
+}
+
+.service-plan__body {
+    display: flex;
+
+}
+
+.service-plan__cost {
+    position: relative;
+    font-weight: 100;
+    font-size: calc(30px + 2.5vw);
+    margin: 0;
+    color: var(--goden-color);
+}
+
+.service-plan__cost sup {
+    font-size: 40px;
+}
+
+.service-plan__pack {
+    display: flex;
+    flex-direction: column;
+
+    &:not(:last-child) {
+        border-right: solid 1px #262626;
+    }
+}
+
+.service-plan .text {
+    color: #999;
+    line-height: 30px;
+    padding: 0 10px;
+    margin: 30px 0;
+}
+
+.service-plan {
+
+}

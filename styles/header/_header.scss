@@ -1,9 +1,15 @@
 .header {
-    position: absolute;
-    top: 20px;
+    position: fixed;
+    top: 40px;
     width: 100%;
-
     z-index: 10;
+
+    transition: 300ms;
+}
+
+.h100 {
+    height: 100vh;
+    width: 100%;
 }
 
 .header__element_left-side {
@@ -14,9 +20,9 @@
 
 .logo {
     display: flex;
-    color: #FFF;
+    color: var(--header-text-color);
     font-size: calc(20px + 1vw);
-    font-family: var(--text-font);
+    font-family: 'Roboto';
 }
 
 .header__wrapper {
@@ -27,14 +33,48 @@
 .header__navigation {
     display: flex;
     justify-content: space-between;
-    max-width: 650px;
+    max-width: 600px;
     width: 100%;
 }
 
 .header__nav-item {
-    font-size: 18px;
-    color: #FFF;
+    position: relative;
+    font-size: 15px;
+    color: var(--header-text-color);
     text-decoration: none;
-    font-family: var(--text-font);
-    text-transform: uppercase;
+    font-family: var(--title-font);
+    /* text-transform: uppercase; */
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        width: 0;
+        height: 2px;
+        background-color: var(--goden-color);
+
+        transition: 450ms ease-out;
+    }
+
+    &:hover {
+
+        &::before {
+            width: 100%;
+        }
+
+    }
+}
+
+.header__nav-item_active {
+    color: var(--goden-color);
+    
+    &::before {
+        width: 100%;
+    }
+} 
+
+.header_fixed {
+    top: 0;
+    background: var(--header-fixed-bcolor);
+    /* border-bottom: solid 1px #333; */
 }

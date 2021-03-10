@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,21 +8,24 @@
     <title>Document</title>
     <link href="styles/style.css" rel="stylesheet">
 </head>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
 <body>
-    
+
 
     <header class="header">
         <div class="header__wrapper">
             <div class="header__element_left-side header__element">
                 <div class="logo">
-                    -- Apollo's Touch --
+                    <span class="primary-color">A</span>pollo's
+                    <span class="primary-color ml-1">T</span>ouch
                 </div>
             </div>
             <div class="header__element_center-side header__element">
 
             </div>
             <div class="header__navigation">
-                <h6><a href="/" class="header__nav-item active">Главная</a></h6>
+                <h6><a href="/" class="header__nav-item header__nav-item_active">Главная</a></h6>
                 <h6><a href="/portfolio" class="header__nav-item">Наши работы</a></h6>
                 <h6><a href="/services" class="header__nav-item">Услуги</a></h6>
                 <h6><a href="/about-us" class="header__nav-item">О нас</a></h6>
@@ -34,29 +38,158 @@
         <div class="preview__wrapper">
             <div class="preview__text-content">
                 <h2 class="preview__title text-center">Lorem ipsum dolor sit amet.</h2>
-                <p class="preview__text text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident voluptatibus nesciunt minima laboriosam minus explicabo et consequuntur non fugit mollitia.</p>
+                <p class="preview__text text-center">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident
+                    voluptatibus nesciunt minima laboriosam minus explicabo et consequuntur non fugit mollitia.</p>
+                <a class="primary-button m-standart button-animation__shine">
+                    <p class="primary-button__text">Lorem, ipsum.</p>
+                </a>
             </div>
+
             <div class="video-background">
-                <iframe 
-                    width="100%" 
-                    height="100%" 
-                    src="https://www.youtube.com/embed/gXD3r6oqcrU?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen="allowfullscreen"
-                    auto
-                >
+                <iframe width="150%" height="200%"
+                    src="https://www.youtube.com/embed/ftmuYNezTLg?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&mute=1&cc_load_policy=0&loop=1&iv_load_policy=3&playlist=ftmuYNezTLg"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen="allowfullscreen" auto>
                 </iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="advantages">
+        <div class="advantages__wrapper">
+            <div class="advantages__header">
+                <h3 class="advantages__title text-center">Lorem ipsum dolor sit amet.</h3>
+                <div class="separator">
+                    <span></span>
+                </div>
+            </div>
+            <div class="advantages__body">
+                <div class="advantages__body_wrapper">
+                    <div class="advantages__body_left advantages__elements_wrapper">
+                        <div class="advantages__element advatanges__swiper-pagination">
+                            <h4 class="block-title primary-color text-right">Lorem, ipsum dolor.</h4>
+                            <p class="text text-right">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex,
+                                officiis. Repellendus dolores modi assumenda autem voluptas rerum consequatur ullam
+                                velit!</p>
+                        </div>
+                        <div class="advantages__element advatanges__swiper-pagination">
+                            <h4 class="block-title primary-color text-right">Lorem, ipsum dolor.</h4>
+                            <p class="text text-right">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex,
+                                officiis. Repellendus dolores modi assumenda autem voluptas rerum consequatur ullam
+                                velit!</p>
+                        </div>
+                        <div class="advantages__element advatanges__swiper-pagination">
+                            <h4 class="block-title primary-color text-right">Lorem, ipsum dolor.</h4>
+                            <p class="text text-right">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex,
+                                officiis. Repellendus dolores modi assumenda autem voluptas rerum consequatur ullam
+                                velit!</p>
+                        </div>
+                    </div>
+                    <div class="advantages__body_center">
+                        <div class="advantages__swiper-container swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./imgs/advantages/1920x1080-px-digital-art-fire-island-sea-waves-1260065.jpg"
+                                        alt="" class="advantages__slide-img">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./imgs/advantages/5737.jpg" alt="" class="advantages__slide-img">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./imgs/advantages/ABMIW2ys.jpg" alt="" class="advantages__slide-img">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./imgs/advantages/nature-landscape-clouds-eriq.jpg" alt=""
+                                        class="advantages__slide-img">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./imgs/advantages/the-isle-more-ostrov-skaly-zamok-doroga-vodopad-lodka.jpg"
+                                        alt="" class="advantages__slide-img">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./imgs/advantages/thumb_18314.jpg" alt="" class="advantages__slide-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="advantages__body_right advantages__elements_wrapper">
+                        <div class="advantages__element advatanges__swiper-pagination">
+                            <h4 class="block-title primary-color">Lorem, ipsum dolor.</h4>
+                            <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, officiis.
+                                Repellendus dolores modi assumenda autem voluptas rerum consequatur ullam velit!</p>
+                        </div>
+                        <div class="advantages__element advatanges__swiper-pagination">
+                            <h4 class="block-title primary-color">Lorem, ipsum dolor.</h4>
+                            <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, officiis.
+                                Repellendus dolores modi assumenda autem voluptas rerum consequatur ullam velit!</p>
+                        </div>
+                        <div class="advantages__element advatanges__swiper-pagination">
+                            <h4 class="block-title primary-color">Lorem, ipsum dolor.</h4>
+                            <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex, officiis.
+                                Repellendus dolores modi assumenda autem voluptas rerum consequatur ullam velit!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-plan">
+        <div class="service-plan__wrapper">
+            <div class="service-plan__header">
+                <h2 class="title text-center">Выберите план услуг:</h2>
+            </div>
+            <div class="service-plan__body">
+                <div class="service-plan__pack">
+                    <p class="service-plan__cost text-center"><sup>$</sup><span>100</span></p>
+                    <h5 class="title  text-center wh-color">Standart</h5>
+                    <p class="text text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim dicta commodi impedit vero temporibus fugit!</p>
+                    <a class="circle-button">
+                        <p class="circle-button__text">
+                            Узнать больше
+                        </p>
+                    </a>   
+                </div>
+                <div class="service-plan__pack">
+                    <p class="service-plan__cost text-center"><sup>$</sup>200</p>
+                    <h5 class="title  text-center wh-color">Classic</h5>
+                    <p class="text text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim dicta commodi impedit vero temporibus fugit!</p>
+                    <a class="circle-button">
+                        <p class="circle-button__text">
+                            Узнать больше
+                        </p>
+                    </a>   
+                </div>
+                <div class="service-plan__pack">
+                    <p class="service-plan__cost text-center"><sup>$</sup>300</p>
+                    <h5 class="title  text-center wh-color">Proffesional</h5>
+                    <p class="text text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim dicta commodi impedit vero temporibus fugit!</p>
+                    <a class="circle-button">
+                        <p class="circle-button__text">
+                            Узнать больше
+                        </p>
+                    </a>                
+                </div>
+                <div class="service-plan__pack">
+                    <p class="service-plan__cost text-center"><sup>$</sup>400</p>
+                    <h5 class="title  text-center wh-color">Premium</h5>
+                    <p class="text text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim dicta commodi impedit vero temporibus fugit!</p>
+                    <a class="circle-button">
+                        <p class="circle-button__text">
+                            Узнать больше
+                        </p>
+                    </a>   
+                </div>
             </div>
         </div>
     </section>
 
 
 
-
-
-
-
-
+    <script src="./js/header-scroll.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/advantages-swiper.js"></script>
 </body>
+
 </html>
