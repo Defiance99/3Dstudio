@@ -1,0 +1,74 @@
+.category-works {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.category-works__wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.category-works__element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 25%;
+    height: 100%;
+    flex: 0 1 25%;
+    background-size: cover;
+    background-position: center;
+
+    transition: 350ms;
+
+    &:hover {
+        width: 40%;
+        flex: 0 0 40%;
+        cursor: pointer;
+
+        &::after {
+            background-color: rgba(0,0,0, .2);
+        }
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0,0,0, .5);
+    }
+}
+
+.category-works__first-block {
+    background-image: url(/imgs/our-work/office.jpg);
+}
+
+.category-works__second-block {
+    background-image: url(/imgs/our-work/apartaments.jpeg);
+}
+
+.category-works__third-block {
+    background-image: url(/imgs/our-work/house.jpg);
+}
+
+.category-works__fourth-block { 
+    background-image: url(/imgs/our-work/restaraunt.jpg);
+
+    &::after {
+        background-color: rgba(0,0,0, .2);
+    }
+}
+
+.category-works__title {
+    font-family: var(--title-font);
+    text-align: center;
+    font-size: calc(30px + 1vw);
+    color: var(--white-color);
+    z-index: 2;
+
+}

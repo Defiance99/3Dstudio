@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles/style.css" rel="stylesheet">
+
+</head>
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<body>
+
+
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__element_left-side header__element">
+                <div class="logo">
+                    <span class="primary-color">A</span>pollo's
+                    <span class="primary-color ml-1">T</span>ouch
+                </div>
+            </div>
+            <div class="header__element_center-side header__element">
+
+            </div>
+            <div class="header__navigation">
+                <h6><a href="/" class="header__nav-item">Главная</a></h6>
+                <h6><a href="/portfolio" class="header__nav-item">Наши работы</a></h6>
+                <h6><a href="/services" class="header__nav-item">Услуги</a></h6>
+                <h6><a href="/about-us" class="header__nav-item header__nav-item_active">О нас</a></h6>
+                <h6><a href="/contacts" class="header__nav-item">Контакты</a></h6>
+            </div>
+        </div>
+    </header>
+
+    <section class="preview-screen">
+        <div class="preview-screen__wrapper swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide preview-screen__item" data-preview="1">
+                    <h3 class="title text-center">Lorem ipsum dolor sit.</h3>
+                </div>
+                <div class="swiper-slide preview-screen__item" data-preview="2">
+                    <h3 class="title text-center">Lorem ipsum dolor sit.</h3>
+                </div>
+                <div class="swiper-slide preview-screen__item" data-preview="3">
+                    <h3 class="title text-center">Lorem ipsum dolor sit.</h3>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="about-us-info">
+        <div class="about-us-info__wrapper">
+            <div class="d-flex">
+                <div class="about-us-info__element_left col-6">
+                    <div class="about-us-ifno__element-wrapper_left">
+                        <h2 class="title text-center">О нас</h2>
+                        <div class="separator half-separator"></div>
+                        <p class="sub-title text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Tempora,
+                            aliquam.</p>
+                        <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum eius sint cum,
+                            facilis fuga praesentium alias in quibusdam reprehenderit numquam.</p>
+                        <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum eius sint cum,
+                            facilis fuga praesentium alias in quibusdam reprehenderit numquam.</p>
+                        <div class="our-skills">
+                            <div class="our-skills__wrapper">
+                                <div class="progress-bar">
+                                    <div class="progress-bar__wrapper">
+                                        <div class="progress-bar__item">
+                                            <div class="progress-bar__label">Закрытие проектов:</div>
+                                            <div class="progress-bar__interval">
+                                                <div class="progress-bar__interval_disable" au-progress-bar="1">
+                                                    <span class="progress-bar__value" au-progress-value="1">0%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progress-bar__item">
+                                            <div class="progress-bar__label">Lorem, ipsum dolor.</div>
+                                            <div class="progress-bar__interval">
+                                                <div class="progress-bar__interval_disable" au-progress-bar="2">
+                                                    <span class="progress-bar__value" au-progress-value="2">0%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="progress-bar__item">
+                                            <div class="progress-bar__label">Положительных отзывов:</div>
+                                            <div class="progress-bar__interval">
+                                                <div class="progress-bar__interval_disable" au-progress-bar="3">
+                                                    <span class="progress-bar__value" au-progress-value="3">0%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum eius sint cum,
+                            facilis fuga praesentium alias in quibusdam reprehenderit numquam.</p>
+                        <div class="d-flex">
+                            <p class="text">Наши социальные сети:</p>
+                            <div class="social-icons__wrapper">
+                                <a href="" class="social-icons__item">
+                                    <img src="/imgs/social-icons/icons8-facebook-20.png" alt="">
+                                </a>
+                                <a href="" class="social-icons__item">
+                                    <img src="/imgs/social-icons/icons8-instagram-20.png" alt="">
+                                </a>
+                                <a href="" class="social-icons__item">
+                                    <img src="/imgs/social-icons/icons8-telegram-app-20.png" alt="">
+                                </a>
+                                <a href="" class="social-icons__item">
+                                    <img src="/imgs/social-icons/icons8-viber-20.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="single-form">
+                            <div class="single-form__item m-auto">
+                                <input type="text" class="single-form__input" placeholder="+375 (__) ___-__-__">
+                                <button class="single-form__submit">Получить консультацию</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-us-info__element_right col-6"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-table">
+        <div class="container info-table__wrapper">
+            <div class="col-4 centering flex-column info-table__element_left">
+                <img src="/imgs/icons/icons8-medal-80.png" alt="" class="info-table__img">
+                <h4 class="title text-center">Lorem, ipsum.</h4>
+                <p class="text text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa expedita
+                    nisi tempora placeat veniam quia ipsam eveniet magnam at eos!</p>
+            </div>
+            <div class="col-4 centering flex-column info-table__element_center">
+                <img src="/imgs/icons/icons8-medal-80.png" alt="" class="info-table__img">
+                <h4 class="title text-center">Lorem, ipsum.</h4>
+                <p class="text text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa expedita
+                    nisi tempora placeat veniam quia ipsam eveniet magnam at eos!</p>
+            </div>
+            <div class="col-4 centering flex-column info-table__element_right">
+                <img src="/imgs/icons/icons8-medal-80.png" alt="" class="info-table__img">
+                <h4 class="title text-center">Lorem, ipsum.</h4>
+                <p class="text text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa expedita
+                    nisi tempora placeat veniam quia ipsam eveniet magnam at eos!</p>
+            </div>
+        </div>
+    </section>
+
+    <seciton class="info-steps">
+        <div class="container info-steps__wrapper">
+            <div class="col-6 info-steps__left swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="info-steps__element-wrapper swiper-slide" data-step-info="1">
+                        <h3 class="title text-center">Lorem ipsum dolor sit.</h3>
+                        <p class="text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ab
+                            dignissimos
+                            ducimus magnam voluptatum nesciunt nulla soluta ea. Labore, maiores!</p>
+                    </div>
+                    <div class="info-steps__element-wrapper swiper-slide" data-step-info="2">
+                        <h3 class="title text-center">Lorem ipsum dolor sit.</h3>
+                        <p class="text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ab
+                            dignissimos
+                            ducimus magnam voluptatum nesciunt nulla soluta ea. Labore, maiores! Lorem ipsum dolor sit
+                            amet consectetur adipisicing.</p>
+                    </div>
+                    <div class="info-steps__element-wrapper swiper-slide" data-step-info="3">
+                        <h3 class="title text-center">Lorem ipsum dolor sit.</h3>
+                        <p class="text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ab
+                            dignissimos
+                            ducimus magnam voluptatum nesciunt nulla soluta ea. Labore, maiores! Lorem ipsum dolor sit
+                            amet consectetur adipisicing elit. Facilis, tenetur.</p>
+                    </div>
+                    <div class="info-steps__element-wrapper swiper-slide" data-step-info="4">
+                        <h3 class="title text-center">Lorem ipsum dolor sit.</h3>
+                        <p class="text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ab
+                            dignissimos
+                            ducimus magnam voluptatum nesciunt nulla soluta ea. Labore, maiores! Lorem, ipsum.</p>
+                    </div>
+                    <div class="info-steps__element-wrapper swiper-slide" data-step-info="5">
+                        <h3 class="title text-center">Lorem ipsum dolor sit.</h3>
+                        <p class="text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta ab
+                            dignissimos
+                            ducimus magnam </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-6 info-steps__right flex-column">
+                <h3 class="title text-center">How we work</h3>
+                <div class="info-steps__circle-wrapper">
+                    <div class="info-steps__circle">
+                        <div class="info-steps__icons">
+                            <div class="info-steps__icon-wrapper" data-step="1">
+                                <img src="/imgs/icons/icons8-home-18.png" alt="" class="info-steps__icon">
+                            </div>
+                            <div class="info-steps__icon-wrapper" data-step="2">
+                                <img src="/imgs/icons/icons8-home-18.png" alt="" class="info-steps__icon">
+                            </div>
+                            <div class="info-steps__icon-wrapper" data-step="3">
+                                <img src="/imgs/icons/icons8-home-18.png" alt="" class="info-steps__icon">
+                            </div>
+                            <div class="info-steps__icon-wrapper" data-step="4">
+                                <img src="/imgs/icons/icons8-home-18.png" alt="" class="info-steps__icon">
+                            </div>
+                            <div class="info-steps__icon-wrapper" data-step="5">
+                                <img src="/imgs/icons/icons8-home-18.png" alt="" class="info-steps__icon">
+                            </div>
+                        </div>
+                        <div class="info-steps__titles">
+                            <h6 class="title">Шаг 1</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </seciton>
+
+    <section class="category">
+        <div class="category__wrapper">
+            <h3 class="title">Lorem, ipsum dolor.</h3>
+            <div class="container justify-center">
+                <a href="" class="col-3 category__element_left category__element">
+                    <div class="layout__shadow"></div>
+                    <h5 class="title">Офисы</h5>
+                    <div class="single-form__submit">Перейти</div>
+                </a>
+                <a href="" class="col-3 category__element_left-center category__element">
+                    <div class="layout__shadow"></div>
+                    <h5 class="title">Квартиры</h5>
+                    <div class="single-form__submit">Перейти</div>
+                </a>
+                <a href="" class="col-3 category__element_right-center category__element">
+                    <div class="layout__shadow"></div>
+                    <h5 class="title">Дома / Коттеджи</h5>
+                    <div class="single-form__submit">Перейти</div>
+                </a>
+                <a href="" class="col-3 category__element_right category__element">
+                    <div class="layout__shadow"></div>
+                    <h5 class="title">Рестораны</h5>
+                    <div class="single-form__submit">Перейти</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <sectoin class="contact-form">
+        <div class="contact-form__wrapper">
+            <div class="contact-form__header">
+                <h3 class="title text-center">Связаться с нами</h4>
+                    <div class="separator"></div>
+                    <p class="sub-title text-center">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic autem voluptatem inventore quaerat
+                        vitae. Soluta autem magni id officiis molestias!
+                    </p>
+            </div>
+            <div class="contact-form__body">
+                <div class="contact-form__body_left contact-form__element">
+                    <div class="contacts-us">
+                        <div class="contacts-us__item">
+                            <div class="d-flex">
+                                <div class="primary-color contacts-us__label-item">Phone:</div> <a href="tel:+375"
+                                    class="contacts-us__link">+375 99 999 99</a>
+                            </div>
+                        </div>
+                        <div class="contacts-us__item">
+                            <div class="d-flex">
+                                <div class="primary-color contacts-us__label-item">Email:</div> <a
+                                    href="mailto:at.info@mail.ru" class="contacts-us__link">at.info@mail.ru</a>
+                            </div>
+                        </div>
+                        <div class="contacts-us__item">
+                            <div class="d-flex">
+                                <div class="primary-color contacts-us__label-item">Web:</div> <a href=""
+                                    class="contacts-us__link">at-studio.ru</a>
+                            </div>
+                        </div>
+                        <div class="social-icons__wrapper">
+                            <a href="" class="social-icons__item">
+                                <img src="/imgs/social-icons/icons8-facebook-20.png" alt="">
+                            </a>
+                            <a href="" class="social-icons__item">
+                                <img src="/imgs/social-icons/icons8-instagram-20.png" alt="">
+                            </a>
+                            <a href="" class="social-icons__item">
+                                <img src="/imgs/social-icons/icons8-telegram-app-20.png" alt="">
+                            </a>
+                            <a href="" class="social-icons__item">
+                                <img src="/imgs/social-icons/icons8-viber-20.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form__body_right contact-form__element">
+                    <div class="contact-form__item">
+                        <label for="cf-username" class="contact-form__name">Ваше Имя*</label>
+                        <input id="cf-username" type="text" class="contact-form__input">
+                    </div>
+                    <div class="contact-form__item">
+                        <label for="cf-phone" class="contact-form__name">Ваш Телефон*</label>
+                        <input id="cf-phone" type="text" class="contact-form__input">
+                    </div>
+                    <div class="contact-form__item">
+                        <label for="cf-message" class="contact-form__name">Ваше Сообщение</label>
+                        <textarea name="" class="contact-form__textarea" id="cf-message" cols="20" rows="7"></textarea>
+                    </div>
+                    <div class="contact-form__item">
+                        <input type="submit" class="contact-form__submit primary-submit">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </sectoin>
+
+    <footer>
+        <div class="footer__wrapper bottom-bar">
+            <div class="footer__element_left">
+                <p class="text">2021 Apollo's Touch</p>
+            </div>
+            <div class="footer__element_right">
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/header-scroll.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/advantages-swiper.js"></script>
+    <script src="/js/steps-progress-swiper.js"></script>
+</body>
+
+</html>

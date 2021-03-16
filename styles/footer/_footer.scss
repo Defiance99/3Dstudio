@@ -1,0 +1,18 @@
+footer {
+    padding: 15px 30px;
+    min-height: 50px;
+    background: #110;
+}
+
+.footer__wrapper {
+    display: flex;
+}
+
+.footer__element_left, .footer__element_right {
+    flex: 0 1 50%;
+}
+
+.footer__element_right {
+
+}
+

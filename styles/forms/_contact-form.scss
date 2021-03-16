@@ -1,0 +1,110 @@
+.contact-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 85vh;
+    background-image: url(/imgs/contact-bg-10.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0,0,0,.6);
+    }
+}
+
+.contact-form__wrapper {
+    z-index: 2;
+}
+
+.contact-form__body {
+    display: flex;
+    padding: 15px;
+}
+
+.contact-form__element {
+    flex: 0 1 50%;
+}
+
+.contact-form__body_left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact__item {
+    color: #FFF;
+    margin-bottom: 15px;
+    font-family: var(--title-font);
+}
+
+.contact-form__body_right {
+}
+
+.contact-form__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form__name {
+    color: rgba(255, 255, 255, .5);
+}
+
+.contact-form__input, .contact-form__textarea {
+    display: block;
+    width: 100%;
+    padding: 0 15px;
+    margin: 10px 0 15px;
+    border: 2px solid transparent;
+    line-height: 40px;
+    color: white;
+    background: rgba(255, 255, 255, .2);
+    font-family: var(--title-font);
+    box-sizing: border-box;
+
+    &:focus {
+        outline: none;
+        border-color: var(--goden-color);
+    }
+}
+
+.contact-form__item .contact-form__textarea {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    line-height: 20px;
+    resize: none;
+}
+
+.contacts-us__label-item {
+    max-width: 35px;
+    width: 100%;
+}
+
+.contacts-us__item {
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.contacts-us__item span {
+    font-weight: 700;
+    font-family: var(--title-font);
+    font-size: 16px;
+}
+
+.contacts-us__link {
+    font-family: var(--title-font);
+    color: var(--text-color);
+    text-align: left;
+    margin-left: 20px;
+    
+    &:hover {
+        text-decoration: underline;
+    }
+}

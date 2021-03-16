@@ -2,18 +2,7 @@
     position: relative;
     min-height: 100vh;
     background-color: var(--darkness-color);
-    /* background: url(/imgs/plan-packs/15261scvEHnpQeZVMBigdbaA.jpg); */
     background-attachment: fixed;
-
-    /* &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-color: rgba(0,0,0, 0.6);
-    } */
 }
 
 .service-plan__wrapper {
@@ -22,6 +11,7 @@
     justify-content: space-between;
     min-height: 650px;
     margin: 0 auto;
+    padding-bottom: 80px;
     max-width: var(--main-block-width);
     width: 100%;
     padding: var(--default-padding);
@@ -39,27 +29,54 @@
 
 .service-plan__body {
     display: flex;
+    justify-content: space-between;
+    max-width: 1050px;
+    margin: 0 auto;
 
+    .single-form__submit {
+        max-width: 150px;
+        text-align: center;
+        margin: 40px auto;
+        border-radius: 10px;
+    }
 }
 
 .service-plan__cost {
     position: relative;
     font-weight: 100;
-    font-size: calc(30px + 2.5vw);
+    color: #FFF;
     margin: 0;
+    font-size: 23px;
+}
+
+.service-plan__value {
+    font-size: calc(30px + 2.5vw);
     color: var(--goden-color);
+
 }
 
 .service-plan__cost sup {
+    position: relative;
+    top: -10px;
     font-size: 40px;
+    color: var(--goden-color);
 }
 
 .service-plan__pack {
     display: flex;
     flex-direction: column;
+    max-width: 350px;
+    width: 100%;
+    cursor: pointer;
+
+    transition: 350ms;
 
     &:not(:last-child) {
         border-right: solid 1px #262626;
+    }
+
+    &:hover {
+        box-shadow: 0 0 5px 5px;
     }
 }
 
@@ -73,3 +90,4 @@
 .service-plan {
 
 }
+

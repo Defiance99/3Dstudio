@@ -4,7 +4,20 @@
 
 //Header
 @import './header/header.scss';
+//Footer
+@import './footer/footer';
+//Forms
+@import './forms/contact-form';
+@import './forms/single-form';
 // Home page
 @import './home-page/preview.scss';
 @import './home-page/advantages';
 @import './home-page/service-plan';
+@import './home-page/pluses';
+@import './home-page/statistic';
+// Our Work page
+@import './works/project';
+@import './pages/about-us';
+@import './pages/works';
+//
+@import './progress-bar';

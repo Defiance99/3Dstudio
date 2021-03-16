@@ -1,19 +1,24 @@
 :root {
     --primary-text-color: black;
-    --goden-color: #caa243; 
+    /* --goden-color: #caa243; */ 
+    --goden-color: #C29545; 
     /* --goden-color: #fbbc26;  */
     --darkness-color: #18191b;
     --white-color: #FFF;
+    --black-color: #000;
+    --ash-color: #252525;
     --title-font: 'Roboto';
-    --text-font: 'Bookman';
+    --text-font: 'Roboto_Slab';
     --title-block-color: #FFF;
     --light-text-color: #DDD;
+    --text-color: #FFF;
     // Header
     --header-text-color: #FFF;
     --header-fixed-bcolor: #18191b;
+    // Bottom Bar
+    --bot-bar-text-size: 12px;
     // Preview Page
     --pp-text-color: #FFF;
-
     --main-block-width: 1140px;
     --default-padding: 15px;
 }
