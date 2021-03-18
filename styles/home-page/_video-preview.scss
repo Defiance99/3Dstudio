@@ -1,0 +1,132 @@
+.video-preview {
+
+}
+
+.video-preview__wrapper {
+    display: flex;
+    min-height: 80vh;
+    background: var(--ash-color);
+
+    .container {
+        width: 100%;
+    }
+}
+
+.video-preview__left {
+    position: relative;
+    background: url(/imgs/our-work/restaraunt.jpg);
+    background-size: cover;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0,0,0,.4);
+    }
+}
+
+
+.video-preview__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title {
+        max-width: 400px;
+        color: var(--goden-color);
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    .primary-button__text {
+        padding: 0px 23px;
+    }
+
+    .separator::before, .separator::after {
+        width: 180px;
+    }
+}
+
+.video-preview__wrapper_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
+}
+
+.preview-categories__subtitle {
+    max-width: 400px;
+    margin: 0 auto;
+    line-height: 1.75em;
+    color: #999;
+}
+
+.video-preview__button_play {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    border: 5px var(--goden-color) solid;
+    z-index: 2;
+    cursor: pointer;
+
+    transition: 300ms;
+    transform: translate(-50%, -50%);
+
+    &:hover {
+        background: var(--goden-color);
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 22px;
+        height: 22px;
+        background: url(/imgs/icons/icons8-play-22.png);
+
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+
+.video-layout {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    z-index: 9;
+}
+
+.video-layout__wrapper {
+    max-width: 800px;
+    width: 100%;
+    height: 500px;
+    z-index: 9;
+}
+
+.video-layout__bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 8;
+}
+
+.video-layout__video_active {
+    display: flex !important;
+}

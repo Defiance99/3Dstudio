@@ -39,7 +39,6 @@
             <h3 class="title">Lorem, ipsum dolor.</h3>
             <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum velit sapiente maxime,
                 dicta quaerat nisi laudantium ab ut quam minima?</p>
-            <a href="" class="single-form__submit">Lorem, ipsum.</a>
         </div>
     </section>
 
@@ -177,7 +176,7 @@
                                         <div class="progress-bar__label">Закрытие проектов:</div>
                                         <div class="progress-bar__interval">
                                             <div class="progress-bar__interval_disable" au-progress-bar="1">
-                                                <span class="progress-bar__value" au-progress-value="1">0%</span>
+                                                <span class="progress-bar__value" au-progress-value="1" data-progress-value="93%">0%</span>
                                             </div>
                                         </div>
                                     </div>
@@ -185,7 +184,7 @@
                                         <div class="progress-bar__label">Lorem, ipsum dolor.</div>
                                         <div class="progress-bar__interval">
                                             <div class="progress-bar__interval_disable" au-progress-bar="2">
-                                                <span class="progress-bar__value" au-progress-value="2">0%</span>
+                                                <span class="progress-bar__value" au-progress-value="2" data-progress-value="78%">0%</span>
                                             </div>
                                         </div>
                                     </div>
@@ -193,7 +192,7 @@
                                         <div class="progress-bar__label">Положительных отзывов:</div>
                                         <div class="progress-bar__interval">
                                             <div class="progress-bar__interval_disable" au-progress-bar="3">
-                                                <span class="progress-bar__value" au-progress-value="3">0%</span>
+                                                <span class="progress-bar__value" au-progress-value="3" data-progress-value="85%">0%</span>
                                             </div>
                                         </div>
                                     </div>
@@ -203,15 +202,15 @@
                     </div>
                     <div class="d-flex justify-around">
                         <div class="d-flex flex-column">
-                            <span class="big-num">321</span>
+                            <span class="big-num single-progress-value" data-single-value="321">0</span>
                             <span class="sup-num">Lorem ispum.</span>
                         </div>
                         <div class="d-flex flex-column about-schemes__element_center-border">
-                            <span class="big-num">523</span>
+                            <span class="big-num single-progress-value" data-single-value="531">0</span>
                             <span class="sup-num">Lorem ispum.</span>
                         </div>
                         <div class="d-flex flex-column">
-                            <span class="big-num">721</span>
+                            <span class="big-num single-progress-value" data-single-value="724">0</span>
                             <span class="sup-num">Lorem ispum.</span>
                         </div>
                     </div>
@@ -243,13 +242,62 @@
         </div>
     </section>
 
-    <section class="curtains">
-        <div class="curtains__wrapper">
-            <h4 class="title text-center">Lorem ipsum dolor sit amet.</h4>
-            <div class="curtains__window">
-                <div class="curtains__item">
-                    <img src="" alt="" class="curtains__img_left">
-                    <img src="" alt="" class="curtains__img_right">
+    <section class="img-comp">
+        <div class="img-comp__wrapper">
+            <h3 class="title text-center">Lorem ipsum dolor sit amet.</h3>
+            <div class="img-comp__container swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="img-comp__img">
+                            <img src="/imgs/our-work/house.jpg" alt="" class="img">
+                        </div>
+                        <div class="img-comp__img img-comp__overlay">
+                            <img src="/imgs/our-work/apartaments.jpeg" alt="" class="img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img-comp__img">
+                            <img src="/imgs/our-work/house.jpg" alt="" class="img">
+                        </div>
+                        <div class="img-comp__img img-comp__overlay">
+                            <img src="/imgs/our-work/apartaments.jpeg" alt="" class="img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img-comp__img">
+                            <img src="/imgs/our-work/house.jpg" alt="" class="img">
+                        </div>
+                        <div class="img-comp__img img-comp__overlay">
+                            <img src="/imgs/our-work/apartaments.jpeg" alt="" class="img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img-comp__img">
+                            <img src="/imgs/our-work/house.jpg" alt="" class="img">
+                        </div>
+                        <div class="img-comp__img img-comp__overlay">
+                            <img src="/imgs/our-work/apartaments.jpeg" alt="" class="img">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="img-comp__img">
+                            <img src="/imgs/our-work/house.jpg" alt="" class="img">
+                        </div>
+                        <div class="img-comp__img img-comp__overlay">
+                            <img src="/imgs/our-work/apartaments.jpeg" alt="" class="img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination img-comp__pagination"></div>
+            </div>
+
+            <div class="container">
+                <div class="img-comp__prev">
+                    <div class="single-form__submit">Назад</div>
+                </div>
+                <div class="img-comp__next">
+                    <div class="single-form__submit">Вперед</div>
                 </div>
             </div>
         </div>
@@ -340,7 +388,6 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/advantages-swiper.js"></script>
     <script src="/js/steps-progress-swiper.js"></script>
-
     <script>
         let swiper = new Swiper('.schemes-swiper', {
             loop: true,
@@ -396,6 +443,24 @@
             speed: 1200
         });
     </script>
+    <script>
+        let swiperComprasions = new Swiper('.img-comp__container', {
+            loop: true,
+            cssMode: true,
+            mousewheel: false,
+            navigation: {
+                nextEl: '.img-comp__next',
+                prevEl: '.img-comp__prev',
+            },
+            allowTouchMove: false,
+            pagination: {
+                el: '.img-comp__pagination',
+            },
+        });
+    </script>
+    <script src="/js/comprasions-slider.js"></script>
+    <script src="/js/progress-value.js"></script>
+
 </body>
 
 </html>
