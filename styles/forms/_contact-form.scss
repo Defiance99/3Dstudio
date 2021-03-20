@@ -3,24 +3,11 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    height: 85vh;
-    background-image: url(/imgs/original.jpg);
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-
-    &::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background: rgba(0,0,0,.6);
-    }
 }
 
 .contact-form__wrapper {
+    width: 100%;
+    padding: 0 70px;
     z-index: 2;
 }
 
@@ -88,6 +75,7 @@
 }
 
 .contacts-us__item {
+    width: 100%;
     padding: 5px 0;
     border-bottom: 1px solid rgba(255,255,255,0.2);
 }
@@ -107,4 +95,28 @@
     &:hover {
         text-decoration: underline;
     }
+}
+
+.contact-form__submit {
+    width: 150px;
+    color: #FFF;
+    padding: 15px;
+    background: var(--darkness-color);
+    outline: none;
+    border: 1px #FFF solid;
+    margin: 5px auto;
+
+    transition: 350ms;
+
+    &:hover {
+        cursor: pointer;
+        border-radius: 5px;
+        background-color: var(--darkness-color);
+        box-shadow: 0 0 5px 1px var(--goden-color);
+        border: 1px transparent solid;
+    }
+}
+
+textarea.contact-form__input {
+    max-height: 165px;
 }

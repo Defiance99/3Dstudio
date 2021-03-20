@@ -34,6 +34,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 15px;
 
     .title {
         max-width: 400px;
@@ -129,4 +130,19 @@
 
 .video-layout__video_active {
     display: flex !important;
+}
+
+@media (max-width: 770px) {
+    .video-preview__left {
+        height: 500px;
+    }
+    .video-preview__right {
+        order: -1;
+    }
+    .video-preview__wrapper_right {
+        justify-content: center;
+    }
+    .preview-categories__subtitle {
+        text-align: center;
+    }
 }

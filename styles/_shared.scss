@@ -527,3 +527,34 @@ h2.title {
     background: var(--goden-color);
     opacity: 1;
 }
+
+.contact-link {
+    color: var(--text-color);
+    text-decoration: none;
+
+    &:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+
+@media (max-width: 770px) {
+    .container {
+        flex-wrap: wrap;
+        
+        .col-6 {
+            flex: 0 1 100%;
+        }
+    }
+    .title {
+        text-align: center;
+    }
+    .text {
+        text-align: center;
+    }
+}
+@media (max-width: 700px) {
+    .separator::after, .separator::before {
+        width: 200px;
+    }
+}

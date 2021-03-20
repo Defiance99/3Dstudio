@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let swiper = new Swiper('.advantages__swiper-container', {
         loop: true,
         autoplay: {
-            delay: 4000,
+            delay: 40000,
             disableOnInteraction: false
         },
         on: {

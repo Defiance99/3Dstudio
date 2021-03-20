@@ -54,3 +54,13 @@
     margin: 0 15px;
     background: #2C2C2C;
 }
+
+@media (max-width: 1000px) {
+    .statistics__body {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .statistics__item {
+        margin: 10px 15px;
+    }
+}

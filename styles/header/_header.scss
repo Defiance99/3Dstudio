@@ -75,6 +75,101 @@
 
 .header_fixed {
     top: 0;
-    background: var(--header-fixed-bcolor);
-    /* border-bottom: solid 1px #333; */
+    background: var(--header-fixed-bcolor) !important;
+    box-shadow: 0 0 5px 3px;
+}
+
+.header__navigation_active {
+    display: flex !important;
+    position: absolute;
+    top: 70px;
+    flex-direction: column;
+    background: #262626;
+    max-width: 250px;
+    left: 0;
+    height: 100vw;
+    justify-content: flex-start;
+
+    .header__nav-item {
+        position: relative;
+
+        &::before {
+            content: '';
+            position: relative;
+            width: 25px;
+            height: 25px;
+            background: url(/imgs/icons/icons8-multiply-25.png);
+        }
+    }
+
+
+}
+
+.header__burger-menu {
+    display: none;
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    top: 23px;
+    right: calc(100% - 75px);
+    
+    .top-line, .middle-line, .bottom-line {
+        position: relative;
+    }
+    .top-line {
+        top: 0;
+    }
+    .middle-line {
+        top: calc(50% - 2px);
+    }
+    .bottom-line {
+        top: calc(100% - 2px);
+    }
+    .top-line::after, .middle-line::after, .bottom-line::after {
+        content: '';
+        position: absolute;
+        width: 27px;
+        height: 2px;
+        background-color: #FFF;
+
+        transition: all 200ms ease;
+    }
+}
+
+.header__burger-menu:hover {
+    cursor: pointer;
+}
+.header__burger-menu:hover .top-line::after {
+    transform: translateY(12.5px) rotate(45deg);
+}
+.header__burger-menu:hover .middle-line::after {
+    opacity: 0;
+}
+.header__burger-menu:hover .bottom-line::after {
+    transform: translateY(-12.5px) rotate(-45deg);
+}
+
+.header__burger-menu:hover .mobile-nav-menu {
+        width: 238px !important;
+}
+
+
+@media (max-width: 900px) {
+    .header {
+        display: flex;
+        justify-content: center;
+        top: 0;
+        height: 70px;
+        background: rgba(24,25,27,.5);
+
+        .header__navigation {
+            display: none;
+        }
+    }
+    .header__wrapper {
+        justify-content: center;
+    }
+    .header__burger-menu {
+        display: flex;
+    }
 }

@@ -12,6 +12,7 @@
 }
 
 .preview-categories__wrapper_left {
+    padding: 0 15px;
     max-width: 450px;
     margin: 50px auto;
 
@@ -136,4 +137,14 @@
         
         transition: 200ms;
     }
+}
+
+@media (max-width: 1000px) {
+    .preview-categories__wrapper_right {
+
+        .container {
+        }
+    }
+}
+@media (max-width: 770px) {
 }

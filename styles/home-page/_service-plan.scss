@@ -31,6 +31,7 @@
     display: flex;
     justify-content: space-between;
     max-width: 1050px;
+    width: 100%;
     margin: 0 auto;
 
     .single-form__submit {
@@ -71,13 +72,14 @@
 
     transition: 350ms;
 
-    &:not(:last-child) {
-        border-right: solid 1px #262626;
-    }
-
     &:hover {
         box-shadow: 0 0 5px 5px;
     }
+}
+
+.service-plan__pack_center {
+    border-left:  solid 1px #262626;
+    border-right: solid 1px #262626;
 }
 
 .service-plan .text {
@@ -91,3 +93,34 @@
 
 }
 
+
+@media (min-width: 771px) {
+    .service-plan  {
+
+        .swiper-slide {
+            flex-shrink: 1;
+        }
+
+        .swiper-container {
+            overflow: visible;
+        }
+    }
+}
+@media (max-width: 770px) {
+    .service-plan {
+        display: flex;
+        align-items: center;
+        min-height: 80vh;
+
+        .service-plan__body {
+            max-width: unset;
+        }
+
+        .service-plan__pack  {
+            align-items: center;
+            margin: 6px auto;
+            box-shadow: 0 0 5px 5px;
+            max-width: unset;
+        }
+    }
+}

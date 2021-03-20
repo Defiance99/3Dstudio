@@ -1,0 +1,122 @@
+.contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+
+    .footer__icon-wrapper {
+        width: 40px;
+        height: 40px;
+        border-color: var(--goden-color);
+
+        &:hover {
+            border-color: #FFF;
+        }
+    }
+    .footer__element_top  {
+        max-width: 220px;
+    }
+}
+
+.contacts__body_left {
+    padding-left: 50px;
+}
+
+.contacts__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-top: 90px;
+    background: url(/imgs/5a7f3e1895926161810a9025.jpg);
+    background-size: cover;
+
+    animation: slideBg 100s linear infinite;
+
+    @keyframes slideBg {
+        0% {
+            background-position: 0 0;
+        }
+        100% {
+            background-position: 500px 1000px;
+        }
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0,0,0,.5);
+    }
+    h3.title {
+        margin-bottom: 0;
+    }
+}
+
+.contacts__info {
+    max-width: 1000px;
+    width: 100%;
+    min-height: 700px;
+    z-index: 5;
+    box-shadow: 0 0 10px 0px var(--goden-color);
+    border-radius: 7px;
+    background: var(--darkness-color);
+
+    .sub-title {
+        max-width: 500px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+
+    .title {
+        color: var(--text-color);
+    }
+}
+
+.contacts__body {
+
+    
+}
+
+.contacts__text {
+    margin-top: 5px;
+    color: var(--text-color);
+
+    .contact-link {
+        margin-left: 10px;
+    }
+}
+
+.contacts__title_wrapper {
+    display: flex;
+    align-items: center;
+    .title {
+        
+    }
+}
+
+.contacts__social-icons {
+
+    .title {
+        padding-left: 0;
+        margin-bottom: 15px;
+    }
+}
+
+.contacts__icon_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    border: 1px var(--goden-color) solid;
+}
